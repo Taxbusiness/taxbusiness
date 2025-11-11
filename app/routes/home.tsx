@@ -7,7 +7,7 @@ export default function Home() {
       {/* Hero */}
       <section className="bg-gradient-to-r from-[#1C547F] to-[#1D4D72] text-white py-20 text-center relative">
         <h1 className="font-objectivity font-bold text-4xl md:text-6xl mb-4">
-          Soluciones Fiscales
+          Soluciones Fiscales Prueba 1
         </h1>
         <p className="font-objectivity text-lg md:text-xl max-w-2xl mx-auto mb-4">
           20 años brindando confianza, estrategia y resultados en defensa fiscal.
