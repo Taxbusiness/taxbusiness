@@ -88,7 +88,7 @@ export default function Contacto() {
             </p>
 
             <form
-              action="https://formspree.io/f/xnngnraj"
+              action="https://formspree.io/f/mnnlqdde"
               method="POST"
               className="flex flex-col gap-4"
             >
