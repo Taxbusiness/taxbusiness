@@ -1,5 +1,6 @@
 import Carrusel from "~/components/Carrusel";
 import logo_chessTalent from "../images/ajedrez-chess-talent.png";
+import video_taxbussines from "../videos/VIDEO-2025-TaxBusiness.mp4";
 
 export default function Home() {
   return (
@@ -13,8 +14,21 @@ export default function Home() {
           20 años brindando confianza, estrategia y resultados en defensa fiscal.
         </p>
         <p className="font-objectivity text-base md:text-lg text-gray-200 mb-8">
-          Tu aliado estratégico en devoluciones, defensa y consultoría integral.
+          Tu aliado estratégico en soluciones para devoluciones, auditorías del SAT, defensa fiscal y consultoría integral
         </p>
+        {/* 🎥 Video institucional */}
+        <div className="relative max-w-3xl mx-auto mb-10 aspect-video rounded-2xl overflow-hidden shadow-lg border border-white/20">
+          <video
+            id="heroVideo"
+            src={video_taxbussines}
+            controls
+            className="w-full h-full object-cover relative z-10"
+          />
+          
+          {/* Overlay sutil para mantener contraste */}
+          <div className="pointer-events-none absolute inset-0 bg-black/10" />
+        </div>
+
         <a
           href="/contacto"
           className="bg-cyan-700 hover:bg-blue-600 px-8 md:px-10 py-3 md:py-4 rounded-lg font-semibold transition"
