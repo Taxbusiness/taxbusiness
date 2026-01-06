@@ -16,7 +16,7 @@ const KEY_TO_SVGID: Record<string, string> = {
   ver: "MXVER", tab: "MXTAB", yuc: "MXYUC", roo: "MXROO", cam: "MXCAM", oax: "MXOAX", gro: "MXGRO", chiapas: "MXCHP",
 };
 
-// IDs del SVG -> Nombre completo (tu JSON)
+// IDs del SVG -> Nombre completo del estado
 const ID_TO_NAME: Record<string, string> = {
   MXAGU: "Aguascalientes", MXBCN: "Baja California", MXBCS: "Baja California Sur",
   MXCAM: "Campeche", MXCHH: "Chihuahua", MXCHP: "Chiapas", MXCMX: "Ciudad de México",
@@ -31,7 +31,7 @@ const ID_TO_NAME: Record<string, string> = {
 export default function MexicoSVGMap({
   activeStates = [
     "yuc","chih","cdmx","roo","bcn","que","gro","nl","jal","gua","sin",
-    "coah","pue","ver","mich","mex","mor","son","hid"
+    "coah","pue","ver","mich","mex","mor","son","hid","tam"
   ],
   showLegend = true,
 }: MexicoSVGMapProps) {

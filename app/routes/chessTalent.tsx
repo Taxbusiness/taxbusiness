@@ -1,7 +1,7 @@
 import { FaCoins, FaGraduationCap, FaDumbbell, FaPlaneDeparture } from "react-icons/fa";
 
 import ChessTalent_logo from "../images/ajedrez-chess-talent.png";
-import inversion_chess from "../images/inversion_chess.png";
+import inversion_chess from "../images/IMGNW.jpeg";
 import Martinez from "../images/martinez_chess.png";
 import Sion from "../images/sion_chess.png";
 import Tania from "../images/tania_chess.png";
@@ -28,7 +28,7 @@ export default function ChessTalent() {
   // Estados activos (usa las keys de tu TileMap)
   const ACTIVE_STATES = [
     "yuc","chih","cdmx","roo","bcn","que","gro","nl","jal","gua","sin",
-    "coah","pue","ver","mich","mex","mor","son","hid"
+    "coah","pue","ver","mich","mex","mor","son","hid","tam"
   ];
   const COVERAGE_PCT = Math.round((ACTIVE_STATES.length / 32) * 1000) / 10; // 59.4% → 59.4
 
@@ -147,8 +147,16 @@ export default function ChessTalent() {
             <img
               src={inversion_chess}
               alt="Entrega de reconocimientos México Chess Talent"
-              className="rounded-2xl shadow-xl w-full max-w-sm md:max-w-md hover:scale-105 transition-transform duration-500"
-            />
+              className="rounded-3xl 
+              shadow-2xl 
+              w-full 
+              max-w-lg 
+              md:max-w-xl 
+              lg:max-w-2xl
+              hover:scale-105 
+              transition-transform 
+              duration-500"
+          />
           </div>
 
           <div className="grid sm:grid-cols-2 gap-6 text-center">
@@ -200,7 +208,7 @@ export default function ChessTalent() {
               <MexicoSVGMap
                 activeStates={[
                   "yuc","chih","cdmx","roo","bcn","que","gro","nl","jal","gua","sin",
-                  "coah","pue","ver","mich","mex","mor","son","hid"
+                  "coah","pue","ver","mich","mex","mor","son","hid","tam"
                 ]}
               />
             </div>
