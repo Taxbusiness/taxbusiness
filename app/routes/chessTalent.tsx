@@ -2,9 +2,12 @@ import { FaCoins, FaGraduationCap, FaDumbbell, FaPlaneDeparture } from "react-ic
 
 import ChessTalent_logo from "../images/ajedrez-chess-talent.png";
 import inversion_chess from "../images/IMGNW.jpeg";
+// Imágenes de jugadores destacados
 import Martinez from "../images/martinez_chess.png";
 import Sion from "../images/sion_chess.png";
 import Tania from "../images/tania_chess.png";
+import Kalani from "../images/kalani.jpeg";
+import Mia from "../images/Mia.jpeg";
 // ⬇️ Solo usamos el Tile Map (la opción B)
 import MexicoSVGMap from "~/components/MexicoSVGMap";
 
@@ -274,7 +277,7 @@ export default function ChessTalent() {
               </div>
             </div>
 
-            {/* KPIs inferiores empujados al fondo para igualar alturas */}
+            {/* KPIs inferiores al fondo para igualar alturas */}
             <div className="mt-auto grid grid-cols-2 gap-3 w-full">
               <div className="bg-[#1D4D72]/5 rounded-xl p-4 text-center">
                 <div className="text-xl font-semibold text-[#1D4D72] tabular-nums">40%</div>
@@ -291,59 +294,124 @@ export default function ChessTalent() {
 
 
       {/* Jugadores Destacados */}
-      <section className="py-20 px-6 md:px-20 bg-white text-center">
-        <h2 className="text-3xl font-bold text-[#1D4D72] mb-12">Nuestros Jugadores Destacados</h2>
-        <div className="grid md:grid-cols-3 gap-10">
-          {[
-            {
-              nombre: "GM José Eduardo Martínez Alcántara",
-              img: Martinez,
-              titulo: "Gran Maestro Internacional",
-              logros: [
-                "Primer mexicano en Top 100 mundial FIDE",
-                "Subcampeón Continental 2025",
-                "Clasificado a la Copa Mundial de Ajedrez",
-              ],
-            },
-            {
-              nombre: "IM Sión Galaviz",
-              img: Sion,
-              titulo: "Maestro Internacional",
-              logros: [
-                "Campeón Subzonal Centroamericano 2025",
-                "En gira europea rumbo al título de Gran Maestro",
-                "Meta: 10.º GM mexicano en la historia",
-              ],
-            },
-            {
-              nombre: "WIM Tania Miranda Rodríguez",
-              img: Tania,
-              titulo: "Maestra Internacional Femenina",
-              logros: [
-                "Campeona Subzonal Centroamericana 2025",
-                "Clasificada a la Copa Mundial FIDE",
-                "Referente del ajedrez femenil mexicano",
-              ],
-            },
-          ].map((jugador) => (
-            <div
-              key={jugador.nombre}
-              className="bg-gray-50 rounded-2xl shadow-lg p-6 hover:-translate-y-2 transition-all duration-300 border border-gray-100"
-            >
-              <img
-                src={jugador.img}
-                alt={jugador.nombre}
-                className="w-32 h-32 mx-auto rounded-full object-cover mb-4 ring-4 ring-[#1D4D72]/20"
-              />
-              <h3 className="text-xl font-semibold text-[#1C547F] mb-1">{jugador.nombre}</h3>
-              <p className="text-gray-600 mb-3 italic">{jugador.titulo}</p>
-              <ul className="text-sm text-left list-disc list-inside text-gray-700 space-y-1">
-                {jugador.logros.map((logro) => <li key={logro}>{logro}</li>)}
-              </ul>
+     <section className="py-20 px-6 md:px-20 bg-white text-center">
+          <h2 className="text-3xl font-bold text-[#1D4D72] mb-4">
+            Nuestros Jugadores Destacados
+          </h2>
+          <p className="max-w-3xl mx-auto text-lg text-[#144272] mb-14">
+            Talento mexicano de élite que representa al país en los escenarios más importantes del ajedrez internacional.
+          </p>
+
+          {/* 🔝 Jugadores principales */}
+          <div className="grid md:grid-cols-3 gap-10 mb-20">
+            {[
+              {
+                nombre: "GM José Eduardo Martínez Alcántara",
+                img: Martinez,
+                titulo: "Gran Maestro Internacional",
+                logros: [
+                  "Primer mexicano en Top 100 mundial FIDE",
+                  "Subcampeón Continental 2025",
+                  "Clasificado a la Copa Mundial de Ajedrez",
+                ],
+              },
+              {
+                nombre: "IM Sión Galaviz",
+                img: Sion,
+                titulo: "Maestro Internacional",
+                logros: [
+                  "Campeón Subzonal Centroamericano 2025",
+                  "En gira europea rumbo al título de Gran Maestro",
+                  "Meta: 10.º GM mexicano en la historia",
+                ],
+              },
+              {
+                nombre: "WIM Tania Miranda Rodríguez",
+                img: Tania,
+                titulo: "Maestra Internacional Femenina",
+                logros: [
+                  "Campeona Subzonal Centroamericana 2025",
+                  "Clasificada a la Copa Mundial FIDE",
+                  "Referente del ajedrez femenil mexicano",
+                ],
+              },
+            ].map((jugador) => (
+              <div
+                key={jugador.nombre}
+                className="relative bg-gradient-to-b from-[#F8FAFC] to-gray-50 rounded-3xl shadow-xl p-8 hover:-translate-y-3 transition-all duration-300 border border-gray-100"
+              >
+                <img
+                  src={jugador.img}
+                  alt={jugador.nombre}
+                  className="w-36 h-36 mx-auto rounded-full object-cover mb-6 ring-4 ring-[#1D4D72]/30"
+                />
+                <h3 className="text-xl font-semibold text-[#1C547F] mb-1">
+                  {jugador.nombre}
+                </h3>
+                <p className="text-[#1D4D72] mb-4 font-medium">
+                  {jugador.titulo}
+                </p>
+                <ul className="text-sm text-left list-disc list-inside text-gray-700 space-y-1">
+                  {jugador.logros.map((logro) => (
+                    <li key={logro}>{logro}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          {/* 🌱 Talentos en proyección */}
+          <div className="max-w-5xl mx-auto">
+            <h3 className="text-2xl font-semibold text-[#1D4D72] mb-8">
+              Talentos en Crecimiento
+            </h3>
+
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+              {[
+                {
+                  nombre: "Levi Kalani Alexander Fogo Esquivel",
+                  img: Kalani,
+                  titulo: "Maestro FIDE",
+                  logros: [
+                    "Multimedallista nacional",
+                    "Campeón nacional en su categoría",
+                  ],
+                },
+                {
+                  nombre: "WCM Mia Fernanda Guzman Garcia",
+                  img: Mia,
+                  titulo: "Woman Candidate Master",
+                  logros: [
+                    "Multicampeona nacional",
+                    "Representante oficial Olimpiada Mundial 2026",
+                  ],
+                },
+              ].map((jugador) => (
+                <div
+                  key={jugador.nombre}
+                  className="bg-gray-50 rounded-2xl shadow-md p-6 hover:-translate-y-2 transition-all duration-300 border border-gray-100"
+                >
+                  <img
+                    src={jugador.img}
+                    alt={jugador.nombre}
+                    className="w-28 h-28 mx-auto rounded-full object-cover mb-4 ring-4 ring-[#1D4D72]/20"
+                  />
+                  <h4 className="text-lg font-semibold text-[#1C547F] mb-1">
+                    {jugador.nombre}
+                  </h4>
+                  <p className="text-gray-600 mb-3 italic">
+                    {jugador.titulo}
+                  </p>
+                  <ul className="text-sm text-left list-disc list-inside text-gray-700 space-y-1">
+                    {jugador.logros.map((logro) => (
+                      <li key={logro}>{logro}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-      </section>
+          </div>
+        </section>
 
       {/* Eslogan Final */}
       <section className="py-20 px-6 md:px-20 bg-gradient-to-r from-[#1C547F] to-[#1D4D72] text-white text-center">
