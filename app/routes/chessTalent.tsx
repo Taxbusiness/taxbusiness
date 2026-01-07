@@ -366,7 +366,7 @@ export default function ChessTalent() {
               Talentos en Crecimiento
             </h3>
 
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <div className="grid sm:grid-cols-2 gap-8 place-items-center">
               {[
                 {
                   nombre: "Levi Kalani Alexander Fogo Esquivel",
@@ -389,7 +389,7 @@ export default function ChessTalent() {
               ].map((jugador) => (
                 <div
                   key={jugador.nombre}
-                  className="bg-gray-50 rounded-2xl shadow-md p-6 hover:-translate-y-2 transition-all duration-300 border border-gray-100"
+                  className="bg-gray-50 rounded-2xl shadow-md p-6 hover:-translate-y-2 transition-all duration-300 border border-gray-100 w-full max-w-sm"
                 >
                   <img
                     src={jugador.img}
