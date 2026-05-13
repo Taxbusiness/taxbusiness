@@ -14,6 +14,7 @@ export default {
         accent: "#0E7490",
         neutral: "#F8FAFC",
         dark: "#1E293B",
+        cream: "#FFFFEB",
       },
       fontFamily: {
         sans: ["Objectivity", "sans-serif", "system-ui"],// Fuente corporativa

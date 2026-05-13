@@ -10,6 +10,8 @@ export default [
     route("contacto", "routes/contacto.tsx"),
     route("chessTalent", "routes/chessTalent.tsx"),
 
+    // Ruta para tarjetas de presentación (dinámica)
+    route("v/:slug", "routes/v.$slug.tsx"),
     // Ruta comodín para 404
     route("*", "routes/NotFound.tsx"),
 
