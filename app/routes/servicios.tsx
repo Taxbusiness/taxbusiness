@@ -27,21 +27,25 @@ const servicios = [
     title: "Defensa Fiscal",
     desc: "Protección legal en cualquier etapa procesal.",
     img: defensaImg,
-    detalles: ["Devoluciones de IVA e ISR, de saldos a favor y pagos indebidos.",
-               "Resolvemos rezagos y dificultades actualizando a las empresas.",
-               "Sector exportador, alimentos, automotriz, farmacéutico y más."],
+    detalles: ["PAE-embargos y garantías.",
+               "Recursos de revocación.",
+               "Demandas de nulidad.",
+               "Amparos y revisiones.",
+               "Incidentes y quejas.",
+               "Revision administrativa."
+               ],
+      
+      
+      
   },
   {
     icon: FileText,
     title: "Devolución de Impuestos",
     desc: "IVA, ISR y recuperación de saldos a favor.",
     img: devolucionesImg,
-    detalles: ["PAE-embargos y garantías.",
-               "Recursos de revocación.",
-               "Demandas de nulidad.",
-               "Amparos y revisiones.",
-               "Incidentes y quejas.",
-               "Revision administrativa." 
+    detalles: [ "Devoluciones de IVA e ISR, de saldos a favor y pagos indebidos.",
+               "Resolvemos rezagos y dificultades actualizando a las empresas.",
+               "Sector exportador, alimentos, automotriz, farmacéutico y más."
               ],
   },
   {
